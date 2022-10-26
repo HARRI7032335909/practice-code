@@ -1,0 +1,11 @@
+<head data-sly-use.clientLib="${'/libs/granite/sightly/templates/clientlib.html'}">
+<meta data-sly-call="${clientLib.all @ categories='training'}" data-sly-unwrap></meta>
+<div data-sly-use.var="com.practice.core.models.Harikrishna"></div>
+<div class="A">
+<h1 style="text-align:right">krishna</h1>
+<p class="A1">${properties.title1}<br><p>
+<p class="A2">${properties.title2}<br><p>
+ <p class="A2">${properties.linkURL}<br><p>
+<p class="A3">${var.title3}<br><p>
+</div>
+<input type="button" value="Click me" onclick="msg()">

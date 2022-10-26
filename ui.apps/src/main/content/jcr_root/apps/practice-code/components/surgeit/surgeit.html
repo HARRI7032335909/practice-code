@@ -1,0 +1,19 @@
+<div data-sly-use.vvv="com.practice.core.models.Surgeit">
+    ===================Surge office details=============
+     <div data-sly-list.it="${vvv.javatrainerfun}">
+         ---------------Trbookainer : ${itList.count}--------------
+        <p> Book : <b>${it.NAME} </b></p>
+        <p> number : <b>${it.NUMBER} </b></p>
+
+================= USING NASTED MULTIFIELD ====================
+    <div data-sly-list="${vvv.bookDetailsWithNastedMultifield}">
+    
+        ---------------multinested : ${itemList.count}--------------
+        <p> Book : <b>${item.bookName} </b></p>
+        <p> Subject : <b>${item.bookSubject} </b></p>
+        <div data-sly-list.editon="${item.bookEditons}">
+                ---------------Edition : ${editionList.count}--------------
+            <p> Book Editon : <b>${editon.bookEditon} </b></p>
+            <p> Published Date : <b>${'MMM dd,yyyy' @ format=editon.editonDate}</b> </p>
+        </div>
+    </div>

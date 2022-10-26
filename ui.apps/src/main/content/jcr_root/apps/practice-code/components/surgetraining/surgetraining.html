@@ -1,0 +1,9 @@
+<p>${properties.title1}<br></p>
+
+${properties.title3}<br>
+${properties.linkURL}<br>
+${properties.title2}<br>
+
+<input type="button" value="Click me" onclick="msg()">
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"></sly>
+<sly data-sly-call="${clientlib.all @ categories ='training'}"></sly>

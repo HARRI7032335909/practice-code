@@ -1,0 +1,95 @@
+<head data-sly-use.clientLib="${'/libs/granite/sightly/templates/clientlib.html'}">
+    <meta data-sly-call="${clientLib.all @ categories='navigation/footer'}" data-sly-unwrap>
+    </meta>
+</head>
+<div data-sly-use.redesignFooter="com.practice.core.models.RedesignedFooter" data-sly-unwrap>
+
+    <div class="footer">
+        <div class="container">
+            <div class="top_sider">
+                <div class="search">
+                    <input type="text" class="footer_search" placeholder="${redesignFooter.searchPlaceholder}">
+                    <!-- <span>${redesignFooter.searchPlaceholder}</span> -->
+                </div>
+                <img src="${redesignFooter.searchIcon}" alt="img" />
+                <a href="${redesignFooter.linkUrl}">${redesignFooter.linkText}</a>
+                <a href="${redesignFooter.linkUrl}"><img src="${redesignFooter.linkIcon}" alt="" /></a>
+
+            </div>
+            <div class="bottom_footer">
+                <div class="bottom_width bottom_footer_1">
+                    <h1>Explore Three</h1>
+                    <div data-sly-list.about="${redesignFooter.aboutLinks}" class="bottom_footer_active">
+                        <a class="bottom_footer_link" href="${about.aboutSubLinkUrl}">${about.aboutLinkText}</a> <br>
+                    </div>
+                </div>
+                <div class="bottom_width bottom_footer_2">
+                    <h1>Popular Phones</h1>
+                    <div data-sly-list.phone="${redesignFooter.phoneLinks}" class="bottom_footer_active">
+                        <a class="bottom_footer_link" href="${phone.phoneLinkUrl}">${phone.phoneLinkText}</a> <br>
+                    </div>
+                </div>
+                <div class="bottom_width bottom_footer_3">
+                    <h1>Popular Products</h1>
+                    <div data-sly-list.support="${redesignFooter.productLinks}" class="bottom_footer_active">
+                        <a class="bottom_footer_link" href="${support.productLinkUrl}">${support.productLinkText}</a>
+                        <br>
+                    </div>
+                </div>
+
+                <div class="bottom_width_right bottom_footer_4">
+                    <h1>Our Company</h1>
+                    <div data-sly-list.contact="${redesignFooter.contactLinks}" class="bottom_footer_active">
+                        <a class="bottom_footer_link" href="${contact.contactSubLinkUrl}">${contact.contactLinkText}</a>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="Security-outcomes-32px-padding">
+        <!-- Footer  -->
+        <div class="footer">
+            <!-- Links  -->
+
+            <div class="footer-items">
+                <div data-sly-list.about="${redesignFooter.aboutLinks}">
+                    <a href="" class="footer-item-security-outcomes">${about.linkText}</a>
+                </div>
+            </div>
+            <!-- Support  -->
+
+            <div class="footer-items">
+                <a href="" class="footer-items-customer-support">${redesignFooter.supportMainLink}</a>
+                <div data-sly-list.support="${redesignFooter.supportLinks}">
+                    <a href="" class="footer-items-customer-support">${support.linkText}</a>
+                </div>
+            </div>
+            <!-- Portals  -->
+
+            <div class="footer-items">
+                <a href="" class="footer-items-customer-portal">${redesignFooter.portalMainLink}</a>
+                <div data-sly-list.portal="${redesignFooter.portalLinks}">
+                    <a href="" class="footer-items-customer-portal">${portal.linkText}</a>
+                </div>
+            </div>
+            <!-- Enquiry  -->
+
+            <div class="footer-items">
+                <a href="" class="footer-items-customer-contact-us">${redesignFooter.contactMainLink}</a>
+                <div data-sly-list.contact="${redesignFooter.contactLinks}">
+                    <a href="" class="footer-items-contact-us">${contact.linkText}</a>
+                </div>
+            </div>
+            <hr class="line">
+            <span class="copyright_footer">
+                Hutchison 3G UK Ltd | Registered address: Great Brighams Mead, 1 Vastern Road, Reading, Berkshire RG1
+                8DJ | Registered in England & Wales | Registered company number: 03885486 | Authorised and regulated by
+                the Financial Conduct Authority (registration number: 738979)
+            </span>
+            <br>
+            <span class="copyright">© Hutchison 3G UK Limited 2002 - Present.</span>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    cq:isContainer="true"
+    jcr:description="Use this component to add fields in top navigation"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Top Navigation Header "
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    height="52rem"
+    helpPath="https://fscompass2.f-secure.com/display/COMMUNITIES/Table+component">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs">
+                <items jcr:primaryType="nt:unstructured">
+                    <tab1
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Fields"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <topNavigationHeader
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Section One"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                        composite="{Boolean}true"
+                                        fieldLabel="Top Navigation">
+                                        <field
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                            name="./topNavigationHeader">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <column
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <topNavHeaderText
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldDescription="Enter the Header text"
+                                                            fieldLabel="Header Text"
+                                                            name="./topNavHeaderText"/>
+                                                        <topNavHeaderLink
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                            fieldDescription="Enter the Header Link Url"
+                                                            fieldLabel="Header Link Url"
+                                                            name="./topNavHeaderLinkUrl"/>
+                                                        <topNavIconPath
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                            fieldDescription="Select the icon path"
+                                                            fieldLabel="Nav Icon Path"
+                                                            name="./topNavIconPath"/>
+                                                    </items>
+                                                </column>
+                                            </items>
+                                        </field>
+                                    </topNavigationHeader>
+                                </items>
+                            </column>
+                        </items>
+                    </tab1>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

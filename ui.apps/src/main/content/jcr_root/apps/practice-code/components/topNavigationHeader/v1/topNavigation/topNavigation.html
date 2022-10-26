@@ -1,0 +1,14 @@
+<head data-sly-use.clientLib="${'/libs/granite/sightly/templates/clientlib.html'}">
+  <meta data-sly-call="${clientLib.all @ categories='topNavigation/header'}" data-sly-unwrap>
+  </meta>
+</head>
+
+<div data-sly-use.topNavigationModel="com.practice.core.models.TopHeaderNavigation" data-sly-unwrap>
+  <div data-sly-test="${topNavigationModel.topHeaderList}">
+    <div data-sly-list.headerLinks="${topNavigationModel.topHeaderList}" class="top_nav">
+      <img src="${headerLinks.topNavIconPath}" alt="">
+      <a href="${headerLinks.topNavHeaderLinkUrl}" class="top_nav_icon">${headerLinks.topNavHeaderText}
+      </a>
+    </div>
+  </div>
+</div>

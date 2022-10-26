@@ -1,0 +1,20 @@
+<div data-sly-use.vrs="com.practice.core.models.Multifield">
+    <h1>${vrs.hrName} Books</h1>
+    <p> ALL Trainers : <b>${vrs.javatrainerfun}</b></p>
+    
+   
+    ===================Surge office details=============
+    <div data-sly-list.it="${vrs.javatrainerfun}">
+         ---------------Trainer : ${itList.count}--------------
+        <p> Book : <b>${it} </b></p>
+    </div>
+    
+    <p> ALL Book : <b>${vrs.javatrainerfun @ join='# '}</b></p>
+
+        
+
+</div>
+
+<div data-sly-use.abc="com.practice.core.models.Modelgeeks">
+Hari code second class: ${abc.paper}
+</div>
