@@ -1,38 +1,33 @@
 package com.practice.core.models;
 
 import javax.inject.Inject;
+import javax.inject.Named;
 
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
-
-
 @Model(adaptables = Resource.class,defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
 public class UserModel {
 
-	@Inject 
-	private String haddress;
+	@Inject @Named("title1")
+	
+	private String title;
 	
 	@Inject
-	private String cnumber;
+	private String linkURL;
 	
 	@Inject
-	private String uname;
+	private String title2;
 
-	public String getHaddress() {
-		return haddress;
+	public String getTitle() {
+		return title;
 	}
 
-	public String getCnumber() {
-		return cnumber;
+	public String getLinkURL() {
+		return linkURL;
 	}
 
-	public String getUname() {
-		return uname;
+	public String getTitlehari() {
+		return title2;
 	}
-	
-
-
-
-	
-}
+	}

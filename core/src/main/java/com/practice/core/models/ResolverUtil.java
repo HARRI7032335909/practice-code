@@ -1,3 +1,4 @@
+
 package com.practice.core.models;
 import org.apache.sling.api.resource.LoginException;
 import org.apache.sling.api.resource.ResourceResolver;
@@ -32,4 +33,14 @@ public final class ResolverUtil {
     }
     
 	
-}
+}//accion labs relavence labs 
+//lit
+//gl
+//cgi
+//inventa
+//olam intetnational
+//delite
+//dies 
+//skin it 
+//
+//
